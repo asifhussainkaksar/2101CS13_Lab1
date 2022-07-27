@@ -13,5 +13,8 @@ int main(){
     case 2:
          printf("Difference is %d ", a-b);
          break;
+    case 3:
+          printf("Multiplication is %d ", a*b);
+         break;
       
         

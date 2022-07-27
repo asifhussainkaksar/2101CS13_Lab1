@@ -16,5 +16,11 @@ int main(){
     case 3:
           printf("Multiplication is %d ", a*b);
          break;
+    case 4:
+          printf("Division is %f ", a/b);
+         break;
+  }
+  return 0;
+}
       
         

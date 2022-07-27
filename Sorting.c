@@ -1,5 +1,21 @@
 #include <stdio.h>
 
+void insertion_sort(int array[], int n){
+  int i, key, j;
+  for(i = 1;i<n;i++){
+    key = array[i];
+    j = i-1;
+    while(j>=0 && array[j]>key){
+      array[j+1] = array[j];
+      j = j-1;
+    }
+    array[j+1] = key;
+  }
+  for(int i = 0;i<n;i++){
+    printf("%d  ", array[i]);
+  }
+}
+
 void bubble_sort(int array[], int n){
   int i, j;
   for(int i = 0;i<n-1;i++){
@@ -15,6 +31,7 @@ void bubble_sort(int array[], int n){
     printf("%d  ", array[i]);
     }
 }
+
 void selection_sort(int array[], int n){
   for(int i = 0;i<n-1;i++){
     for(int j = i+1;j<n;j++){
@@ -25,14 +42,14 @@ void selection_sort(int array[], int n){
       }
     }
   }
-}
   for(int i = 0;i<n;i++){
       printf("%d  ", array[i]);
     }
 }
+
 int main(){
   int n;
-  printf("Enter the value of n");
+  printf("Enter the no of elements in array \n");
   scanf("%d",&n);
   int a[n];
   

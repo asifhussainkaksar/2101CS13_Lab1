@@ -146,10 +146,10 @@ int main(){
   printf("Sort the array");
   printf("Enter the no of elements in array \n");
   scanf("%d",&n);
-  int a[n];
+  int arr[n];
   printf("Enter the elements of array/n");
   for(int i=0;i<n;i++){
     scanf("%d",&a[i]);}
-  
+  bubble_sort(arr,n);
   return 0;
 }
